@@ -3,75 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagob's prize claiming center</title>
+    <meta name="description" content="An informational website explaining why Skibidi Toilet isn't as bad as people think.">
+    <title>Why Skibidi Toilet Isn't Actually That Bad</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #1a0000;
-            color: #ff6666;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            background-image: url('https://wallpaperaccess.com/full/340434.png'); /* Background image */
+            background-size: cover;
+            color: #fff;
+			<img src="https://media.tenor.com/cwubAnd8gN4AAAAi/skibidi-skibidi-toilet.gif" alt="Description" class="fixed-image">
+
         }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
-        button {
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            background-color: #ff3333;
-            color: #1a0000;
-            border: none;
+
+        nav {
+            margin: 20px;
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.7);
+            padding: 10px;
             border-radius: 5px;
         }
-        #fullscreenImage {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Gold color on hover */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #ffcc00; /* Gold color for headings */
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .animated-button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .animated-button:hover {
+            background-color: #e6b800; /* Darker gold */
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome! Click below me to claim a prize!</h1>
-		<h2>WARNING⚠: prize not recommended for </h2>
-			<h3> people who are allergic to cute things,</h3>
-						<h3>people who fall in love easily</h3>
-    <button onclick="unleashBeast()">Click here to get prize!</button>
-    <img id="fullscreenImage" src="squish.gif" alt="Unleashed Beast">
-	<audio id="beastAudio" src="sloth22.ogg" loop autoplay></audio>
+    <header>
+        <h1>Why Skibidi Toilet Isn't Actually That Bad</h1>
+    </header>
 
-    <script>
-        function unleashBeast() {
-            const img = document.getElementById('fullscreenImage');
-            const audio = document.getElementById('beastAudio');
-            
-            img.style.display = 'block';
-            img.requestFullscreen().then(() => {
-                audio.play();
-            }).catch((err) => {
-                console.error(`Error attempting to enable fullscreen mode: ${err.message}`);
-            });
-        }
+    <nav>
+        <a href="#section1">Introduction</a>
+        <a href="#section2">What is Skibidi Toilet?</a>
+        <a href="#section3">The Humor in It</a>
+        <a href="#section4">Why the Hate?</a>
+        <a href="#section5">Cultural Impact</a>
+        <a href="#section6">Community and Creativity</a>
+        <a href="#section7">The Role of Absurdity in Humor</a>
+        <a href="#section8">Educational Value</a>
+        <a href="#section9">Accessibility of Humor</a>
+        <a href="#section10">Conclusion</a>
+    </nav>
 
-        document.addEventListener('fullscreenchange', () => {
-            if (!document.fullscreenElement) {
-                const img = document.getElementById('fullscreenImage');
-                const audio = document.getElementById('beastAudio');
-                img.style.display = 'none';
-                audio.pause();
-                audio.currentTime = 0;
-            }
-        });
-    </script>
-</body>
-</html>
+    <div class="container">
+        <section id="section1">
+            <h2>Introduction</h2>
+            <p>"Skibidi Toilet" has taken the internet by storm, becoming a viral phenomenon that some people love and others love to hate. However, it's not as bad as it seems! There's more to the trend than meets the eye, and this website will dive into why it's actually a fun, creative part of internet culture.</p>
+        </section>
+
+        <section id="section2">
+            <h2>What is Skibidi Toilet?</h2>
+            <p>For those unfamiliar, "Skibidi Toilet" is a humorous trend involving absurd and surreal videos featuring dancing toilets and catchy remixes of songs. The combination of weird visuals and catchy beats makes it hard to ignore, but that’s part of its charm. It's intentionally bizarre to stand out and make people laugh.</p>
+        </section>
+
+        <section id="section3">
+            <h2>The Humor in It</h2>
+            <p>The humor of "Skibidi Toilet" lies in its ridiculousness. It plays with the absurd, turning something as mundane as a toilet into a dancing character with over-the-top energy. The randomness is precisely what many people find amusing, especially in a world where humor has evolved to embrace memes and surreal internet content.</p>
+        </section>
+
+        <section id="section4">
+            <h2>Why the Hate?</h2>
+            <p>Like any viral trend, "Skibidi Toilet" has its critics. Some find it childish, while others don't appreciate its bizarre nature. But it's essential to remember that humor is subjective. What one person finds silly, another might find hilarious. The backlash often stems from a misunderstanding of internet humor or simply being oversaturated with the meme.</p>
+        </section>
+
+        <section id="section5">
+            <h2>Cultural Impact</h2>
+            <p>"Skibidi Toilet" has had a significant cultural impact, influencing a new wave of internet memes and videos. Its unique blend of animation, humor, and catchy music has inspired countless parodies and adaptations, showcasing how creative expression can take many forms. The trend also highlights how absurdity has become a key aspect of internet culture, where unexpected content can bring people together.</p>
+        </section>
+
+        <section id="section6">
+            <h2>Community and Creativity</h2>
+            <p>The "Skibidi Toilet" phenomenon has fostered a sense of community among fans and creators alike. Many people enjoy creating their own versions of the videos, sharing them on platforms like TikTok and YouTube. This encourages creativity, allowing individuals to express themselves through art, music, and humor. It also promotes collaboration, as fans share their work and inspire each other, creating a vibrant ecosystem of content.</p>
+            <p>Moreover, the trend provides an opportunity for audiences to engage with different styles of animation and storytelling. As creators experiment with the format, they push the boundaries of what can be done in a short, comedic video, contributing to the evolution of digital entertainment.</p>
+        </section>
+
+        <section id="section7">
+            <h2>The Role of Absurdity in Humor</h2>
+            <p>Absurd humor has a long history in comedy, and "Skibidi Toilet" fits right into that tradition. By embracing the ridiculous and nonsensical, the trend challenges conventional expectations of storytelling and character development. This subversion of norms can be refreshing, allowing people to find joy in silliness without the constraints of realism.</p>
+        </section>
+
+        <section id="section8">
+            <h2>Educational Value</h2>
+            <p>While it may not seem like it at first glance, "Skibidi Toilet" can have educational value. It encourages viewers to think critically about media consumption and the nature of humor. By analyzing what makes the content funny or appealing, audiences can gain insights into cultural trends and the impact of social media on entertainment. Additionally, it can spark discussions about creativity, animation, and meme culture.</p>
+        </section>
+
+        <section id="section9">
+            <h2>Accessibility of Humor</h2>
+            <p>"Skibidi Toilet" is a prime example of accessible humor. Its simple visuals and catchy music make it easy for anyone to understand and enjoy, regardless of language or background. This accessibility fosters inclusivity, allowing a diverse audience to connect over shared laughter. In a world where humor can often feel exclusive, "Skibidi Toilet" breaks down barriers and unites people through a common, lighthearted experience.</p>
+        </section>
+
+        <section id="section10">
+            <h2>Conclusion</h2>
+            <p>While "Skibidi Toilet" may not be everyone's cup of tea, it's far from being the worst content on the internet. It represents a slice of modern meme culture that thrives on creativity and absurdity. Instead of being dismissed as pointless or annoying, it can be seen as a light-hearted escape that reflects the fun, random nature of online communities. In a world that can often feel serious and heavy
